@@ -1,0 +1,404 @@
+body {
+  background: #000;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.background__detail {
+  background-color: #721f1a;
+  height: calc(100% - 389px);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 195px;
+  z-index: 0;
+}
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+  gap: 10px;
+  height: 52px;
+  justify-content: center;
+  line-height: normal;
+  padding: 16px 24px;
+  text-align: center;
+  width: 208px;
+
+}
+
+.content {
+  background-color: #000;
+  border: 1px solid #079b13;
+  filter: drop-shadow(0px 0px 30px #079b13);
+  height: 871px;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.content__corner-rectangle {
+  background-color: #044e11;
+  bottom: -15px;
+  clip-path: polygon(0% 100%, 0% 50%, 4% 0%, 100% 0%, 100% 50%, 96% 100%);
+  height: 33px;
+  position: absolute;
+  right: 32px;
+  width: 511px;
+  z-index: 3;
+}
+
+.content__main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 120px;
+  position: relative; 
+}
+
+  /* Configuração do GIF como fundo */
+  .content__main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./src/santa-claus-28.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Opcional, ajusta a transparência */
+    z-index: -1; /* Mantém o fundo atrás do conteúdo */
+  }
+
+  /* Estilos adicionais para os elementos dentro do .content__main */
+  .content__main h1, .content__main p {
+    z-index: 1; /* Para garantir que o texto fique sobre o GIF */
+    
+  }
+
+
+.friends__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #044e11;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 21px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 160%;
+  margin-top: 1rem;
+  padding: 24px;
+  width: 453px;
+}
+
+.friends__container>p {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.friends__title {
+  font-family: "Noto Serif", serif;
+  color: #079b13;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.friends__title >span{
+  color: #079b13;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+  font-style: normal;
+}
+
+.form__buttons {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+
+.form__input {
+  font-family: "Noto Serif", serif;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #044e11;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 21px;
+  font-weight: 400;
+  height: 56px;
+  margin-bottom: 32px;
+  outline: none;
+  padding: 8px 16px;
+  width: 517px;
+}
+
+.form__input:focus{
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form__input::placeholder {
+  color: #fff;
+  font-size: 21px;
+  
+}
+
+.form__label {
+  font-family: "Noto Serif", serif;
+  color: #079b13;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 16px;
+}
+
+.form__link {
+  font-family: "Noto Serif", serif;
+  color: #fff;
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 110%;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.form__link:hover {
+  color: #721f1a;
+}
+
+
+.prizeDraw__container {
+  color: #fff;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 700;
+  height: 199px;
+  line-height: 160%;
+  margin-top: 1rem;
+}
+
+.prizeDraw__title {
+  font-family: "Noto Serif", serif;
+  color: #efef09;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.primary {
+  background-color: #079b13;
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: #079b13;
+  opacity: 0.8;
+}
+
+.section--results {
+  align-items: start;
+  display: flex;
+  font-family: Inter;
+  font-style: normal;
+  gap: 48px;
+}
+
+.section__title {
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%;
+  margin: 0 0 80px 0;
+}
+
+.section__title>span {
+  color: #079b13;
+}
+
+.secondary {
+  background-color: #fff;
+  color: #079b13;
+}
+
+.secondary:hover {
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .content {
+    width: 90%;
+    height: auto;
+    padding: 80px;
+  }
+
+  .content__main {
+    padding: 80px 40px;
+    gap: 50px;
+  }
+
+  .section__title {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+
+  .form__input, .friends__container, .form__buttons {
+    width: 100%;
+  }
+
+  .content__corner-rectangle {
+    width: 100%;
+    right: 0;
+  }
+
+  .friends__container {
+    padding: 16px;
+  }
+
+  .form__label {
+    font-size: 20px;
+  }
+}
+
+
+/* Para telas pequenas */
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .button {
+    font-size: 20px;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .content__main {
+    padding: 10px;
+  }
+
+  .friends__container, .form__input {
+    width: 100%;
+  }
+
+  .form__input {
+    font-size: 18px;
+  }
+
+  .section__title {
+    font-size: 48px;
+  }
+}
+
+/* Para telas menores */
+@media (max-width: 480px) {
+  .content {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .content__main {
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+
+  .form__buttons {
+    flex-direction: column;
+  }
+
+  .content__main h1 {
+    font-size: 24px;
+  }
+
+  .friends__container {
+    padding: 16px;
+  }
+}
+
+/* Para telas muito pequenas (até 350px) */
+@media (max-width: 350px) {
+  .content {
+    width: 35%;
+    padding: 80px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .form__buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content__main {
+    width: 10%;
+    padding: 80px;
+  }
+
+  .friends__container {
+    padding: 12px;
+  }
+
+  .form__input {
+    font-size: 16px;
+  }
+
+  .form__link {
+    font-size: 36px;
+  }
+
+  .section__title {
+    font-size: 20px;
+  }
+}
